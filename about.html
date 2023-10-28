@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/youtube-captions-scraper-react-native@1.0.10/dist/index.min.js"></script> -->
+    <title>YT Summary</title>
+</head>
+
+<body class="bg-white border-gray-200 dark:bg-gray-900">
+    <!-- Navbar -->
+
+    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="./index.html" class="flex items-center">
+                <img src="./logo.jpg" class="h-8 mr-3 rounded-full" alt="Youtube Summerizer logo smiling face" />
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Youtube
+                    Summary</span>
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul
+                    class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="./index.html"
+                            class="block py-2 pl-3 pr-4 text-gray-900 bg-blue-700 rounded md:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:text-white-500"
+                            aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" aria-current="page"
+                            class="block py-2 pl-3 pr-4  text-blue-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-blue-500 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent">About</a>
+                    </li>
+                    <!-- <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+                    </li>
+                  
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <section id="aboutProject" class="m-4 max-w-screen-xl p-4">
+        <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><a href="./index.html"
+                class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Youtube Data
+                Parser</a> using AI.</h1>
+
+
+
+
+        <div class="p-4 pt-8 mt-10">
+            <p class="text-lg font-semibold text-white mb-2">Time Efficiency and Productivity:</p>
+            <p class="text-md font-normal text-gray-500 dark:text-gray-400">In the fast-paced digital age, efficiency is
+                paramount. Our <a href="./index.html" class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
+                    YouTube summarizer </a>
+                is designed to save valuable time by extracting the key points, insights, and highlights from videos.
+                This website can help you to quickly grasp the content in a fraction of the time it would take to watch
+                the complete video. Whether you're a professional, student, or simply seeking to learn and stay
+                informed, <a href="./index.html"
+                    class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Youtube Summary
+                </a>summarizer can help you to efficiently gather information from multiple videos, enhancing
+                productivity and time management.</p>
+        </div>
+        <div class="inline-flex items-center justify-center w-full">
+            <hr class="w-64 h-1 my-8 bg-gray-200 border-0 rounded dark:bg-gray-700">
+            <div class="absolute px-4 -translate-x-1/2 bg-white left-1/2 dark:bg-gray-900">
+                <svg class="w-4 h-4 text-gray-700 dark:text-gray-300" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
+                    <path
+                        d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
+                </svg>
+            </div>
+        </div>
+        <div class="p-4">
+            <p class="text-lg text-white font-semibold mb-2">Enhanced Learning and Accessibility:</p>
+            <p class="text-md font-normal text-gray-500 dark:text-gray-400">For students, educators, and lifelong
+                learners, Our, <a href="./index.html"
+                    class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">YouTube
+                    summarizer </a> offer a valuable solution for faster comprehension of educational content. They
+                provide concise overviews of lessons, lectures, or tutorials, helping learners absorb information more
+                effectively. Additionally, YouTube summarizers improve accessibility for individuals with limited time,
+                making content more digestible. This accessibility extends to people with disabilities who may use
+                screen readers or other assistive technologies, making learning and information acquisition more
+                inclusive and efficient.</p>
+        </div>
+
+
+    </section>
+
+
+    <section id="aboutDev" class="m-5 mt-5 p2 bg-white dark:bg-gray-900">
+        <div class="grid max-w-screen-xl px-5 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+            <div class="mr-auto place-self-center lg:col-span-7">
+                <h1
+                    class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
+                    Made By <a href="https://cityji.github.io/portfolio"
+                        class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Nikhil
+                        Tiwari</a></h1>
+                <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">From
+                    checkout to global sales tax compliance, companies around the world use Flowbite to simplify their
+                    payment stack.</p>
+                <a href="https://cityji.github.io/portfolio"
+                    class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-sky-600 hover:bg-blue-700 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+                    See Portfolio
+                    <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+                <a href="https://nikhilweekly.netlify.app/"
+                    class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-blue-700 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+                    Check Other Projects
+                </a>
+            </div>
+            <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+                <img class="transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0  "
+                    src="./nikhilCV.jpg" style="max-height: 70%;" alt="Developer Image Nikhil">
+            </div>
+        </div>
+    </section>
+
+    <!-- fOOTER -->
+    <footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
+        <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="./index.html"
+                    class="hover:underline">YoutubeSummary™</a> All Rights Reserved.
+            </span>
+            <div class="text-center">
+                <a href="https://cityji.github.io/portfolio"
+                    class="hover:text-white p-2 rounded-lg text-md text-center  sm:text-center text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400 hover:bg-blue-600 text-xl hover:underline">
+                    Made By Nikhil
+                    Tiwari</a>
+            </div>
+            <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+                <li>
+                    <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
+                </li>
+                <li>
+                    <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="#" class="mr-4 hover:underline md:mr-6">Licensing</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
+
+</html>

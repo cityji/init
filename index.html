@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/youtube-captions-scraper-react-native@1.0.10/dist/index.min.js"></script> -->
+    <title>YT Summary</title>
+</head>
+
+<body class="bg-white border-gray-200 dark:bg-gray-900">
+    <!-- Navbar -->
+
+    <nav class="bg-white border-gray-200 dark:bg-gray-900 mx-5">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#search" class="flex items-center">
+                <img src="./logo.jpg" class="h-8 mr-3 rounded-full" alt="Youtube Summerizer logo smiling face" />
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"><span
+                        class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400 font-extrabold">YoutubeSummary</span></span>
+
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul
+                    class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                            aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="./about.html"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+                    </li>
+                    <!-- <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+                    </li>
+                  
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- search icon and link -->
+    <!-- also includes/inherits the response from server -->
+
+    <section id="search" style="min-height: 80svh;"
+        class="pb-12 bg-white dark:bg-gray-900 bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern.svg')] dark:bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-dark.svg')]">
+        <div class=" py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 z-10 relative">
+            <a href="./about.html"
+                class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-blue-700 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-800">
+                <span class="text-xs bg-blue-600 rounded-full text-white px-4 py-1.5 mr-3">New</span> <span
+                    class="text-sm font-medium">Adding support to summarize thee text</span>
+                <svg class="w-2.5 h-2.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m1 9 4-4-4-4" />
+                </svg>
+            </a>
+            <h1
+                class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+                Save Your Time.. <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Get
+                    Summary</span></h1>
+            <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-200">
+                save precious time ust this tool to extract the captions of english yt-videos
+            </p>
+            <form class="w-full max-w-md mx-auto">
+                <label for="default-link" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Input YouTube Link</label>
+                <div class="relative">
+                    <div class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none">
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 14">
+                            <path fill-rule="evenodd"
+                                d="M19.7 3.037a4.26 4.26 0 0 0-.789-1.964 2.84 2.84 0 0 0-1.984-.84c-2.767-.2-6.926-.2-6.926-.2s-4.157 0-6.928.2a2.836 2.836 0 0 0-1.983.84A4.225 4.225 0 0 0 .3 3.038a30.148 30.148 0 0 0-.2 3.206v1.5c.01 1.071.076 2.142.2 3.206.094.712.363 1.39.784 1.972.604.536 1.38.837 2.187.848 1.583.15 6.731.2 6.731.2s4.161 0 6.928-.2a2.844 2.844 0 0 0 1.985-.84 4.27 4.27 0 0 0 .787-1.965c.124-1.064.19-2.135.2-3.206V6.243a30.672 30.672 0 0 0-.202-3.206ZM8.008 9.59V3.97l5.4 2.819-5.4 2.8Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <input type="url" id="default-link"
+                        class="block w-full  p-4  pl-12 text-sm text-gray-900 border border-gray-300 rounded-lg bg-white focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Enter YouTube Url here..." required>
+                    <button id="summarise" type="button"
+                        class="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Get Caption
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div style="max-height: 80svh; top: 5rem; opacity: 70%;"
+            class="bg-gradient-to-b from-blue-50 to-transparent dark:from-blue-900 w-full h-full absolute top-0 left-0 z-0">
+        </div>
+
+        <!-- generated symmary of youtube video-->
+
+        <article id="output" class="m-4 p-5 border-blue-500 rounded-lg bg-gray-300 text--200">
+            <center>
+                Input a Valid Youtube Link in textbox and click blue button "Get Caption" to proceed.
+            </center>
+        </article>
+
+    </section>
+
+    <!-- know more ref section -->
+    <section class="bg-white dark:bg-gray-900">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+            <div class="mx-auto max-w-screen-sm text-center">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold leading-tight text-gray-900 dark:text-white">
+                    <a href="./index.html"
+                        class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400"> Know
+                        More</a> About Project
+                </h2>
+                <p class="mb-6 font-light text-gray-500 dark:text-gray-400 md:text-lg">Try Our Website / Platform for 30days
+                    days. No credit card required. This site allows users to manually summarize YouTube videos. Users might watch a video, take notes, and then create a summary of the video's content in their own words</p>
+                <a href="./about.html"
+                    class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-sky-700 focus:outline-none dark:focus:ring-red-800">Know
+                    More</a>
+               
+                <a href="#search"
+                    class="inline-flex items-center justify-center px-5 py-2.5 text-base font-medium text-sm text-center text-white bg-gray-800 rounded-lg  hover:bg-sky-700 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+                    Try Summerizer
+                    <!-- <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg> -->
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- fOOTER -->
+
+
+    <footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
+        <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="./about.html"
+                    class="hover:underline">YoutubeSummary™</a> All Rights Reserved.
+            </span>
+            <div class="text-center">
+                <a href="https://cityji.github.io/portfolio"
+                    class="hover:text-white p-2 rounded-lg text-md text-center  sm:text-center text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400 hover:bg-blue-600 text-xl hover:underline">
+                    Made By Nikhil
+                    Tiwari</a>
+            </div>
+            <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+                <li>
+                    <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
+                </li>
+                <li>
+                    <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="#" class="mr-4 hover:underline md:mr-6">Licensing</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+</body>
+<script>
+    const urlInput = document.querySelector('#default-link');
+    const btn = document.querySelector('#summarise');
+    
+    
+    btn.addEventListener("click", function () {
+        // get url value and check if it's valid?
+        const url = urlInput.value;
+        if(url==''||url===null){
+            console.log(url);
+            console.log(url.value);
+            alert(`Invalid url!:  ${url}`);
+            return;
+        }
+        btn.disabled = true;
+        btn.innerHTML = "Summarising...";
+
+
+        var xhr = new XMLHttpRequest();
+
+        const p = document.getElementById("output");
+        p.innerText="Summarising.. plz wait patiently!"
+        // console.warn("url is : ",url);
+        xhr.open("GET", "http://127.0.0.1:5001/summary?url=" + url, true);
+        xhr.onload = function () {
+            var text = xhr.responseText;
+            p.innerHTML = text;
+            btn.disabled = false;
+            btn.innerHTML = "Summarise";
+            p.scrollIntoView({ behavior: 'smooth' });
+        }
+        xhr.send();
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
+
+</html>
