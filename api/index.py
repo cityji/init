@@ -33,4 +33,4 @@ def get_transcript(video_id):
     
 
 if __name__ == '__main__':
-    app.run(port=5001)  # Ensure Flask runs on port 5001
+    app.run(host='0.0.0.0')  # Ensure Flask runs on port 5001
