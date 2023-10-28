@@ -204,7 +204,7 @@
         const p = document.getElementById("output");
         p.innerText="Summarising.. plz wait patiently!"
         // console.warn("url is : ",url);
-        xhr.open("GET", "http://127.0.0.1:5001/summary?url=" + url, true);
+        xhr.open("GET", "https://youtubesummary.vercel.app/summary?url=" + url, true);
         xhr.onload = function () {
             var text = xhr.responseText;
             p.innerHTML = text;
